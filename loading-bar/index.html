@@ -5,39 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loading · Forma</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
   </head>
 
-  <body class=" bg-[#190B10] w-screen h-screen flex justify-center items-center">
-    <div class="w-[1120px] h-[960px] flex flex-col justify-center items-center gap-[24px]">
-      <div class="w-[230px] h-[12px] text-[#C4A2AB] font-weight text-[10px] tracking-[3px]">—  LET’S GET YOU STARTED  —</div>
-      <div class="w-[720px] h-[456px] bg-[#260F17] border-[#46232E] border border-solid rounded-[24px] flex flex-col overflow-hidden">
-        <div class="w-[720px] h-[398px] flex flex-col items-center">
-          <div class="w-[624px] h-[28px] flex items-center justify-between mt-10 mb-[28px]">
-            <div class="w-[99px] h-[12px] text-[10px] text-[#FF9299] font-semibold">GETTING READY</div>
-            <div class="w-[44px] h-[13px] text-[11px] font-normal text-[#C4A2AB]">01 — 03</div>
-          </div>
-          <div class="w-[624px] h-[48px] text-[40px] text-[#FFF5EE] font-semibold mb-3">Something good is coming.</div>
-          <div class="w-[624px] h-[18px] text-[#C4A2AB] text-[15px] font-normal mb-9">A little preparation for a great beginning.</div>
-          <div class="w-[624px] h-[112px] flex justify-between mb-6">
-            <div class="h-[112px] w-[177px] flex items-end">
-              <div class="w-[148px] h-[112px] text-[112px] text-[#FFF5EE] font-medium flex items-center justify-center">64</div>
-              <div class="text-[#FF6470] text-[38px] font-light">%</div>
+<body class="min-h-screen min-w-[1000px] bg-[#190b10] font-sans text-[#fff5ee]">
+    <div class="mx-auto flex min-h-screen w-[920px] flex-col">
+      <header class="flex h-24 shrink-0 items-center justify-between border-b border-[#ff9299]/10">
+        <nav>
+          <a
+            href="../index.html"
+            class="inline-flex items-center gap-2 rounded-full border border-[#ff9299]/15 bg-white/5 px-4 py-2.5 text-xs font-medium text-[#ff9299] transition-colors hover:border-[#ff9299]/35 hover:bg-[#ff9299]/10 hover:text-[#fff5ee] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff9299] motion-reduce:transition-none"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 12H5m7-7-7 7 7 7" />
+            </svg>
+            Back to projects
+          </a>
+        </nav>
+        <span class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#ff9299]/65">The everyday collection / 01</span>
+      </header>
+
+<div class="flex flex-1 items-center justify-center py-10">
+      <div class="w-[1120px] h-[960px] flex flex-col justify-center items-center gap-[24px]">
+        <div class="w-[230px] h-[12px] text-[#C4A2AB] font-weight text-[10px] tracking-[3px]">—  LET’S GET YOU STARTED  —</div>
+        <div class="w-[720px] h-[456px] bg-[#260F17] border-[#46232E] border border-solid rounded-[24px] flex flex-col overflow-hidden">
+          <div class="w-[720px] h-[398px] flex flex-col items-center">
+            <div class="w-[624px] h-[28px] flex items-center justify-between mt-10 mb-[28px]">
+              <div class="w-[99px] h-[12px] text-[10px] text-[#FF9299] font-semibold">GETTING READY</div>
+              <div class="w-[44px] h-[13px] text-[11px] font-normal text-[#C4A2AB]">01 — 03</div>
             </div>
-            <div class="h-[112px] w-[200px] text-[#C4A2AB] text-[14px] font-normal flex items-center">Bringing everything together</div>
+            <div class="w-[624px] h-[48px] text-[40px] text-[#FFF5EE] font-semibold mb-3">Something good is coming.</div>
+            <div class="w-[624px] h-[18px] text-[#C4A2AB] text-[15px] font-normal mb-9">A little preparation for a great beginning.</div>
+            <div class="w-[624px] h-[112px] flex justify-between mb-6">
+              <div class="h-[112px] w-[177px] flex items-end">
+                <div id="percentage" class="w-[198px] h-[112px] text-[112px] text-[#FFF5EE] font-medium flex items-center justify-center">64</div>
+                <div class="text-[#FF6470] text-[38px] font-light">%</div>
+              </div>
+              <div id="message" class="h-[112px] w-[200px] text-[#C4A2AB] text-[14px] font-normal flex items-center">Bringing everything together</div>
+            </div>
+            <div class="w-[624px] h-[12px] bg-[#46232E] rounded-[999px]">
+              <div id="loading-bar" class="h-3 w-[100%] bg-[#EF3340] rounded-[999px]"></div>
+            </div>
+            <div class="w-[624px] h-[16px] mt-[14px] flex justify-between">
+              <div class="text-[#C4A2AB] text-[10px] font-normal">PREPARING YOUR EXPERIENCE</div>
+              <div class="text-[10px] text-[#C4A2AB] font-normal">JUST A MOMENT</div>
+            </div>
+            
           </div>
-          <div class="w-[624px] h-[12px] bg-[#46232E] rounded-[999px]">
-            <div class="h-3 w-[400px] bg-[#EF3340] rounded-[999px]"></div>
+          <div class="w-[720px] h-[60px] flex items-center justify-center bg-[#1E0C13]">
+            <div class="text-[#C4A2AB] text-[12px] font-normal">→  Your welcome page will open automatically.</div>
           </div>
-          <div class="w-[624px] h-[16px] mt-[14px] flex justify-between">
-            <div class="text-[#C4A2AB] text-[10px] font-normal">PREPARING YOUR EXPERIENCE</div>
-            <div class="text-[10px] text-[#C4A2AB] font-normal">JUST A MOMENT</div>
-          </div>
-          
-        </div>
-        <div class="w-[720px] h-[60px] flex items-center justify-center bg-[#1E0C13]">
-          <div class="text-[#C4A2AB] text-[12px] font-normal">→  Your welcome page will open automatically.</div>
         </div>
       </div>
-    </div>
+</div>
   </body>
 </html>
