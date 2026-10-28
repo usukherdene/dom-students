@@ -5,9 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Palette Generator</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
   </head>
 
-  <body>
-    Color Generator
+  <body class="min-h-screen min-w-[1000px] bg-[#09090b] font-sans text-[#f4f4f5]">
+    <div class="mx-auto flex min-h-screen w-[1240px] flex-col">
+      <header class="flex h-24 shrink-0 items-center justify-between border-b border-[#d9f99d]/10">
+        <nav>
+          <a
+            href="../index.html"
+            class="inline-flex items-center gap-2 rounded-full border border-[#d9f99d]/15 bg-white/5 px-4 py-2.5 text-xs font-medium text-[#d9f99d] transition-colors hover:border-[#d9f99d]/35 hover:bg-[#d9f99d]/10 hover:text-[#f4f4f5] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d9f99d] motion-reduce:transition-none"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 12H5m7-7-7 7 7 7" />
+            </svg>
+            Back to projects
+          </a>
+        </nav>
+        <span class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#d9f99d]/65">The everyday collection / 03</span>
+      </header>
+     
+<div class="flex flex-col items-center justify-center py-10">
+        <div class="w-[1240px] h-[104px] flex justify-between items-start">
+          <div class="w-[620px] h-[65px] flex flex-col justify-between items-start">
+            <div class="w-[214px] h-36px text-[#F4F4F5] text-[30px] font-semibold">Color palettes.</div>
+            <div class="w-[620px] h-[17px] text-[#A1A1AA] text-[14px] font-normal">Generated shades with Tailwind color names. Click a shade to copy its HEX background color.</div>
+          </div>
+          <div class="w-[186px] h-[48px] bg-[#D9F99D] rounded-[12px] flex items-center gap-2 justify-center">
+            <div class="w-[]">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.3327 4.66675V8.00008H9.99935M2.66602 11.3334V8.00008H5.99935" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" stroke="#09090B"/>
+<path d="M4.06602 4.66667C4.43591 3.99398 4.96604 3.42292 5.60943 3.00412C6.25282 2.58532 6.98959 2.33172 7.75444 2.26578C8.51929 2.19985 9.2886 2.32362 9.99417 2.62613C10.6997 2.92864 11.3198 3.40054 11.7993 4.00001L13.3327 8.00001M2.66602 8.00001L4.19935 12C4.67891 12.5995 5.29896 13.0714 6.00453 13.3739C6.7101 13.6764 7.4794 13.8002 8.24425 13.7342C9.0091 13.6683 9.74587 13.4147 10.3893 12.9959C11.0327 12.5771 11.5628 12.006 11.9327 11.3333" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" stroke="#09090B"/>
+</svg>
+
+            </div>
+            <div class="text-[#09090B] text-[14px] font-semibold">Shuffle palettes</div>
+          </div>
+        </div>
+        <div class="w-[1240px] h-[55px] border-t-[1px] border-t-[#27272A] flex justify-between items-center">
+          <div class="w-[173px] h-[15px] text-[12px] text-[#A1A1AA] font-medium">100 → 950 · LIGHT TO DARK</div>
+          <div class="w-[99px] h-[15px] text-[#A1A1AA] text-[12px] font-normal">Ready to explore.</div>
+        </div>
+        <div class="w-[1240px] h-[956px] flex flex-col gap-7 justify-between">
+          <div class="w-[1240px] h-[136] flex flex-col">
+            <div class="text-[#E4E4E7] text-[14px] font-semibold">Red</div>
+            <div class="w-[1240px] h-[107px] flex mt-3">
+              <div class="w-[113.2px] h-[107px] flex flex-col items-center">
+                <div class="w-[113.2px] h-[64px] rounded-[12px] bg-[#FDE3E3]"></div>
+                <div class="w-[38px] h-[43px] flex flex-col items-center">
+                  <div class="mt-2 text-[#D4D4D8] text-[12px] font-medium">100</div>
+                  <div class="w-[38px] h-[12px] text-[#A1A1AA] text-[9px] font-normal">#FDE3E3</div>
+                </div>
+              </div>
+            </div>
+          <div class="w-[1240px] h-[136] flex flex-col mt-7">
+            <div class="text-[#E4E4E7] text-[14px] font-semibold">Amber</div>
+            <div class="w-[1240px] h-[107px] flex mt-3">
+              <div class="w-[113.2px] h-[107px] flex flex-col items-center">
+                <div class="w-[113.2px] h-[64px] rounded-[12px] bg-[#FEF4E1]"></div>
+                <div class="w-[38px] h-[43px] flex flex-col items-center">
+                  <div class="mt-2 text-[#D4D4D8] text-[12px] font-medium">100</div>
+                  <div class="w-[38px] h-[12px] text-[#A1A1AA] text-[9px] font-normal">#FEF4E1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[1240px] h-[136] flex flex-col mt-7">
+            <div class="text-[#E4E4E7] text-[14px] font-semibold">Emerald</div>
+            <div class="w-[1240px] h-[107px] flex mt-3">
+              <div class="w-[113.2px] h-[107px] flex flex-col items-center">
+                <div class="w-[113.2px] h-[64px] rounded-[12px] bg-[#E4FBF4]"></div>
+                <div class="w-[38px] h-[43px] flex flex-col items-center">
+                  <div class="mt-2 text-[#D4D4D8] text-[12px] font-medium">100</div>
+                  <div class="w-[38px] h-[12px] text-[#A1A1AA] text-[9px] font-normal">#E4FBF4</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[1240px] h-[136] flex flex-col mt-7">
+            <div class="text-[#E4E4E7] text-[14px] font-semibold">Sky</div>
+            <div class="w-[1240px] h-[107px] flex mt-3">
+              <div class="w-[113.2px] h-[107px] flex flex-col items-center">
+                <div class="w-[113.2px] h-[64px] rounded-[12px] bg-[#E2F5FD]"></div>
+                <div class="w-[38px] h-[43px] flex flex-col items-center">
+                  <div class="mt-2 text-[#D4D4D8] text-[12px] font-medium">100</div>
+                  <div class="w-[38px] h-[12px] text-[#A1A1AA] text-[9px] font-normal">#E2F5FD</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[1240px] h-[136] flex flex-col mt-7">
+            <div class="text-[#E4E4E7] text-[14px] font-semibold">Violet</div>
+            <div class="w-[1240px] h-[107px] flex mt-3">
+              <div class="w-[113.2px] h-[107px] flex flex-col items-center">
+                <div class="w-[113.2px] h-[64px] rounded-[12px] bg-[#EBE3FD]"></div>
+                <div class="w-[38px] h-[43px] flex flex-col items-center">
+                  <div class="mt-2 text-[#D4D4D8] text-[12px] font-medium">100</div>
+                  <div class="w-[38px] h-[12px] text-[#A1A1AA] text-[9px] font-normal">#EBE3FD</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[1240px] h-[136] flex flex-col mt-7">
+            <div class="text-[#E4E4E7] text-[14px] font-semibold">Pink</div>
+            <div class="w-[1240px] h-[107px] flex mt-3">
+              <div class="w-[113.2px] h-[107px] flex flex-col items-center">
+                <div class="w-[113.2px] h-[64px] rounded-[12px] bg-[#FCE3F0]"></div>
+                <div class="w-[38px] h-[43px] flex flex-col items-center">
+                  <div class="mt-2 text-[#D4D4D8] text-[12px] font-medium">100</div>
+                  <div class="w-[38px] h-[12px] text-[#A1A1AA] text-[9px] font-normal">#FCE3F0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-</html>
+</html> 
