@@ -47,20 +47,20 @@
           <div class="w-[235px] h-[17px] text-[#A4B9AD] text-[14px] font-normal mt-2">A strong password. One click away.</div>
           <div class="w-[85px] h-[15px] mt-8 text-[12px] text-[#A4B9AD] font-normal">Your password</div>
           <div class="w-[448px] h-[64px] bg-[#101B16] rounded-[12px] border border-[#304037] mt-3 flex justify-between items-center">
-            <div class="w-[173px] h-[24px] text-[18px] text-[#BBF7D0] font-normal ml-4">K9#mQ2&xR7!vN4@p</div>
-            <div class="w-[55px] h-[32px] bg-[#1c2722] text-[#DCECE2] text-[12px] font-medium rounded-[8px] flex justify-center items-center mr-4">Copy</div>
+            <div id="show-generated-password" class="w-[173px] h-[24px] text-[18px] text-[#BBF7D0] font-normal ml-4"></div>
+            <div id="copy-button" class="w-[55px] h-[32px] bg-[#1c2722] text-[#DCECE2] text-[12px] font-medium rounded-[8px] flex justify-center items-center mr-4">Copy</div>
           </div>
-          <div class="w-[207px] h-[15px] mt-3 text-[12px] text-[#A4B9AD] font-normal">Uses letters, numbers, and symbols.</div>
+          <div id="message" class="w-[207px] h-[15px] mt-3 text-[12px] text-[#A4B9AD] font-normal">Uses letters, numbers, and symbols.</div>
           <div class="w-[448px] h-[28px] mt-6 flex justify-between items-center">
             <div class="w-[111px] h-[17px] text-[14px] text-[#DCECE2] font-normal">Password length</div>
-            <div class="w-[22px] h-[24px] text-[#86EFAC] text-[18px] font-normal">16</div>
+            <div id="password-range-output" class="w-[22px] h-[24px] text-[#86EFAC] text-[18px] font-normal">16</div>
           </div>
-          <input type="range" min="8" max="24" value="16" class="mt-4 cursor-pointer w-[448px] accent-[#4ADE80]" />
+          <input id="password-range-input" type="range" min="8" max="24" value="16" class="mt-4 cursor-pointer w-[448px] accent-[#4ADE80]" />
           <div class="w-[448px] h-[16px] mt-1 flex justify-between items-center">
             <div class="text-[#8AA294] text-[12px] font-normal">8</div>
             <div class="text-[#8AA294] text-[12px] font-normal">24</div>
           </div>
-          <div class="w-[448px] h-[48px] mt-7 rounded-[12px] bg-[#4ADE80] flex justify-center items-center text-[#102418] text-[14px] font-semibold">Generate password</div>
+          <div id="generate-password-button" class="w-[448px] h-[48px] mt-7 rounded-[12px] bg-[#4ADE80] flex justify-center items-center text-[#102418] text-[14px] font-semibold">Generate password</div>
           <div class="w-[448px] h-[16] mt-5 text-[#8AA294] text-[12px] font-normal flex justify-center items-center">Generated in your browser. Never saved.</div>
         </div>
       </div>
