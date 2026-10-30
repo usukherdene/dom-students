@@ -52,6 +52,7 @@ const pause = () => {
 
 
 const reset = () => {
+    clearInterval(intervalId);
     startTime = 0;
     formatTime(startTime);
 
