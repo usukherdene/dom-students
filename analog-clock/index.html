@@ -28,14 +28,16 @@
 
 <div class="flex flex-1 items-center justify-center py-10">
         <div class="w-[392px] h-[439px] flex flex-col justify-between items-center">
-          <div class="w-[167px] h-[15px] text-[12px] text-[#7B887C] font-semibold">A MOMENT IN TIME</div>
+          <div class="text-[12px] text-[#7B887C] font-semibold">A MOMENT IN TIME</div>
           <div class="w-[392px] h-[392px] rounded-full bg-[#E9E7DF] flex justify-center items-center">
             <div class="w-[360px] h-[360px] rounded-full bg-white flex relative">
               <div class="text-[9px] text-[#8F998A] font-semibold absolute top-[100.8px] left-[50%] -translate-x-1/2 -translate-y-1/2">SWISS</div>
               <div class="w-[12px] h-[12px] rounded-full border-[4px] border-[white] bg-[#C47E57] absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-50"></div>
-              <div class="w-[2px] h-[164.4px] rounded-[999px] bg-[#C47E57] absolute left-[50%] -translate-x-1/2 top-[156px] z-30 "></div>
-              <div class="w-[7px] h-[97px] bg-[#253B35] rounded-[999px] absolute left-[50%] -translate-x-1/2 top-[180px] z-10"></div>
-              <div class="w-[7px] h-[122px] bg-[#253B35] rounded-[999px] absolute left-[50%] -translate-x-1/2 top-[180px] z-20"></div>
+              <div id="second-hand" class="w-[2px] h-[164.4px] rounded-[999px] bg-[#C47E57] absolute left-[50%] -translate-x-1/2 top-[216px] z-30 origin-[center_calc(100%-36px)]"></div>
+              <div id="hour-hand" class="w-[7px] h-[97px] bg-[#253B35] rounded-[999px] absolute left-[50%] -translate-x-1/2 top-[83px] z-10 origin-bottom"></div>
+              <div id="minute-hand" class="w-[7px] h-[122px] bg-[#253B35] rounded-[999px] absolute left-[50%] -translate-x-1/2 top-[58px] z-20 origin-bottom"></div>
+              <div id="markers" class="absolute inset-0"></div>
+              <div id="numbers" class="absolute inset-0 font-serif text-xl sm:text-2xl"></div>
             </div>
           </div>
         </div>
