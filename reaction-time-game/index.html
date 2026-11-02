@@ -28,14 +28,17 @@
         <div class="w-[576px] h-[575px] rounded-[24px] bg-[#18181B] border border-[#27272A] p-8 flex flex-col ">
           <div class="w-[159px] h-[29px] text-[#F4F4F5] text-[24px] font-semibold">Reaction time</div>
           <div class="w-[313px] h-[24px] mt-2 text-[#A1A1AA] text-[14px] font-normal">Wait for green, then click as quickly as you can.</div>
-          <div class="w-[512px] h-[256px] mt-6 bg-[#27272A] rounded-[16px] flex flex-col items-center">
-            <div class="w-[36px] h-[36px] border-[2px] border-[#F4F4F5] flex items-center rounded-full flex justify-center items-center mt-[75px]">
-              <div class="w-[22px] h-[22px] border-[2px] border-[#F4F4F5] flex items-center rounded-full flex justify-center items-center">
-                <div class="w-[6px] h-[6px] bg-[#F4F4F5] rounded-full"></div>
-              </div>
+          <div id="reaction-screen" class="w-[512px] h-[256px] mt-6 bg-[#27272A] rounded-[16px] flex flex-col items-center">
+            <div id="state" class="mt-[75px] w-[50px] h-[50px] flex justify-center items-center">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M42 24C42 33.9411 33.9411 42 24 42C14.0589 42 6 33.9411 6 24C6 14.0589 14.0589 6 24 6C33.9411 6 42 14.0589 42 24Z" stroke-width="2" stroke="#F4F4F5"/>
+<path d="M35 24C35 30.0751 30.0751 35 24 35C17.9249 35 13 30.0751 13 24C13 17.9249 17.9249 13 24 13C30.0751 13 35 17.9249 35 24Z" stroke-width="2" stroke="#F4F4F5"/>
+<path d="M24 27C25.6569 27 27 25.6569 27 24C27 22.3431 25.6569 21 24 21C22.3431 21 21 22.3431 21 24C21 25.6569 22.3431 27 24 27Z" fill="#F4F4F5" stroke-width="2" stroke="#F4F4F5"/>
+</svg>
+
             </div>
-            <div class="text-[24px] text-[#F4F4F5] font-semibold mt-3">Ready when you are</div>
-            <div class="text-[14px] text-[#F4F4F5] font-normal mt-3">Click to start</div>
+            <div id="message" class="text-[24px] text-[#F4F4F5] font-semibold mt-3">Ready when you are</div>
+            <div id="text" class="text-[14px] text-[#F4F4F5] font-normal mt-3">Click to start</div>
           </div>
           <div class="w-[512px] h-[84px] mt-6 flex justify-between gap-3">
             <div class="w-[250px] h-[84px] rounded-[12px] bg-[#27272A] flex flex-col items-center">
