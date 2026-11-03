@@ -79,7 +79,7 @@ const resultScreen = () => {
   text.style.color = "#ffffff";
 
   lastAttempt.textContent = `${reactionTime.toFixed(0)} ms`;
-  best.textContent = `${bestRecord} ms`;
+  best.textContent = `${bestRecord.toFixed(0)} ms`;
   reactionValue = reactionTime;
 };
 
